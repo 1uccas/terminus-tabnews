@@ -8,7 +8,7 @@ table.add_column("title", justify="center")
 table.add_column("link", justify="center")
 
 url = feedparser.parse('https://www.tabnews.com.br/recentes/rss')
-print(url.channel.title)
+
 
 lenn = len(url.entries)
 
