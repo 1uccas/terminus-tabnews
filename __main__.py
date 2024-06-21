@@ -17,3 +17,6 @@ for i in range (0, lenn):
     table.add_row(f"{i}",f"{url.entries[i].title}",f"{url.entries[i].link}")
 
 console.print(table)
+
+console.print("[green]Deseja abrir qual opção?[/green]")
+number = console.input("[green]~>[/green]")
