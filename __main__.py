@@ -12,7 +12,7 @@ url = feedparser.parse('https://www.tabnews.com.br/recentes/rss')
 
 lenn = len(url.entries)
 
-for i in range (1, lenn):
+for i in range (0, lenn):
     table.add_row(f"{url.entries[i].title}",f"{url.entries[i].link}")
 
 console = Console()
