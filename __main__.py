@@ -19,4 +19,8 @@ for i in range (0, lenn):
 console.print(table)
 
 console.print("[green]Deseja abrir qual opção?[/green]")
-number = console.input("[green]~>[/green]")
+number = int(console.input("[green]~>[/green]"))
+
+while number < 0 or number > lenn:
+    console.print("[red]Error ~ Digite apenas os números da tabela[/red]")
+    number = int(console.input("[green]~>[/green]"))
