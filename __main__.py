@@ -5,7 +5,7 @@ import webbrowser as web
 
 console = Console()
 
-table = Table(title="TabNews: Conteúdos para quem trabalha com Programação e Tecnologia")
+table = Table()
 table.show_lines=True
 table.add_column("Item", justify="center")
 table.add_column("title", justify="center")
@@ -19,15 +19,15 @@ for i in range (0, lenn):
 
 console.print(table)
 
-console.print("[green]Deseja abrir qual opção?[/green]")
+console.print("🎈 [yellow]Selecione um item[/yellow]")
 while True:
     try:
-        number = int(console.input("[green]~>[/green]"))
+        number = int(console.input("👉 "))
         if number < 0 or number > lenn:
-            console.print("[red]Error ~ Valor superior/inferior ao apresentado[/red]")
+            console.print("👾 [bold][red]Error[/red][/bold] ~ [bold]Valor superior/inferior ao apresentado[/bold]")
         else:
-
+            console.print(f":warning-emoji: [purple]Abrindo[/purple] ~ [yellow]{url.entries[number].title}[/yellow]")
             web.open(f"{url.entries[number].link}")
             break
     except ValueError as VE:
-        console.print("[yellow]Error ~ Valor não suportado[/yellow]") 
+        console.print("👹 [red]Error[/red] ~ [pink]Valor não suportado[/pink]") 
