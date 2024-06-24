@@ -1,6 +1,7 @@
 import feedparser
 from rich.console import Console
 from rich.table import Table
+import webbrowser as web
 
 console = Console()
 
@@ -25,6 +26,8 @@ while True:
         if number < 0 or number > lenn:
             console.print("[red]Error ~ Valor superior/inferior ao apresentado[/red]")
         else:
+
+            web.open(f"{url.entries[number].link}")
             break
     except ValueError as VE:
         console.print("[yellow]Error ~ Valor não suportado[/yellow]") 
