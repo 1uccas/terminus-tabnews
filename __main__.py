@@ -15,13 +15,13 @@ while True:
     table.show_lines=True
     table.add_column("Item", justify="center")
     table.add_column("Titulo", justify="center")
-    table.add_column("Link", justify="center")
+    table.add_column("Descrição", justify="center")
 
     url = feedparser.parse('https://www.tabnews.com.br/recentes/rss')
     lenn = len(url.entries)
 
     for i in range (0, lenn):
-        table.add_row(f"{i}",f"{url.entries[i].title}",f"{url.entries[i].link}")
+        table.add_row(f"{i}",f"{url.entries[i].title}", f"{url.entries[i].description}")
 
     console.print(table)
 
