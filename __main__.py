@@ -14,8 +14,8 @@ while True:
     table = Table()
     table.show_lines=True
     table.add_column("Item", justify="center")
-    table.add_column("title", justify="center")
-    table.add_column("link", justify="center")
+    table.add_column("Titulo", justify="center")
+    table.add_column("Link", justify="center")
 
     url = feedparser.parse('https://www.tabnews.com.br/recentes/rss')
     lenn = len(url.entries)
