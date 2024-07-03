@@ -1,44 +1,44 @@
 # terminus-tabnews:
 
-Terminus-Tabnews é uma aplicação de linha de comando que busca e exibe artigos recentes do site "TabNews" usando um feed RSS. Ele permite que os usuários selecionem um artigo para abrir no navegador web padrão.
+Terminus-Tabnews is a command line application that fetches and displays recent articles from the "TabNews" website using an RSS feed. It allows users to select an article to open in their default web browser.
 
-### ✅ Requisitos:
- > [📌 **Python** - (A partir da versão 3.0)]
+### ✅ Requirements:
+ > [📌 **Python** - (From version 3.0)]
 
- >[👉 Módulos - `feedparser`, `rich`, `webbrowser`, `os`, `time`]
+ >[👉 Modules - `feedparser`, `rich`, `webbrowser`, `os`, `time`]
 
-### 💻 Instalação
-1. **Clone o repositório ou baixe o script:**
+### 💻 Installation
+1. **Clone the repository or download the script:**
    ```sh
    git clone https://github.com/1uccas/terminus-tabnews.git
    ```
 
-2. **Navegue até a pasta:**   
+2. **Navigate to the folder:**   
 
    ```sh
    cd terminus-tabnews
    ```
 
-3. **Instale os módulos Python necessários:**
+3. **Install required Python modules:**
    ```sh
    pip install feedparser rich
    ```
 
-### 🤖 Execute o script
+### 🤖 Run the script
 
    ```sh
    python __main__.py
    ```
    
-   **OU**
+   **OR**
    
    ```sh
-   py __main__.py
+   py__main__.py
    ```
 
 
-### Contribuição
-Sinta-se à vontade para fazer fork do repositório e enviar pull requests. Para mudanças maiores, abra uma issue primeiro para discutir o que você gostaria de alterar.
+### Contribution
+Feel free to fork the repository and submit pull requests. For larger changes, open an issue first to discuss what you would like to change.
 
-### Licença
-Este projeto está licenciado sob a Licença MIT.
+### License
+This project is licensed under the MIT License.
