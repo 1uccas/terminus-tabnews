@@ -27,13 +27,13 @@ Terminus-Tabnews is a command line application that fetches and displays recent 
 ### 🤖 Run the script
 
    ```sh
-   python __main__.py
+   python terminus-tabnews.py
    ```
    
    **OR**
    
    ```sh
-   py__main__.py
+   py terminus-tabnews.py
    ```
 
 
