@@ -14,18 +14,27 @@ Terminus-Tabnews is a command line application that fetches and displays recent 
    ```
 
 2. **Navigate to the folder:**   
-
    ```sh
    cd terminus-tabnews
    ```
 
-3. **Install required Python modules:**
+3. **Create a new virtual environment (venv)**
    ```sh
-   pip install feedparser rich
+   py -m venv venv
+   ```
+
+   **OR**
+
+   ```sh
+   python -m venv venv
+   ```
+
+4. **Install required Python modules:**
+   ```sh
+   pip install -r requirements.txt 
    ```
 
 ### 🤖 Run the script
-
    ```sh
    python terminus-tabnews.py
    ```
