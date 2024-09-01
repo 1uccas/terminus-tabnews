@@ -1,4 +1,3 @@
-import 
-
-def test_user(self):
-    assert 1 == 1
+class TestUsabilitySelf:
+    def test_user(self):
+        assert 1 == 1
